@@ -11,3 +11,5 @@ Ending value for China Submissions CMGR = CALCULATE([China Submissions],DATEADD(
 CMGR = 
 VAR a =IFERROR(([Ending value for China Submissions CMGR]/[Beginning value for China Submissions CMGR])^(1/'Parameter for CMGR months'[CMGR months])-1,0)
 RETURN IF(a = -1,BLANK(),a)
+
+
